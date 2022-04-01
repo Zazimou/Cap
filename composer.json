@@ -1,0 +1,37 @@
+{
+  "name": "zazimou/cap",
+  "description": "Common Alerting Protocol Version 1.2 reader",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "php-curl-class/php-curl-class": "~8.0",
+    "ext-simplexml": "*"
+  },
+  "require-dev": {
+    "nette/tester": "~2.0",
+    "ninjify/nunjuck": "^0.2.0"
+  },
+  "authors": [
+    {
+    "name": "Jiří Zima",
+    "email": "jzima@datron.cz"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Zazimou\\CAP\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Zazimou\\CAP\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  }
+}
